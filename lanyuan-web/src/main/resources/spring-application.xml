@@ -25,10 +25,10 @@
 	</bean>
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="url" value="jdbc:mysql://10.8.17.177:3306/lanyuan?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull" />
-		<property name="username" value="root" />
-		<property name="password" value="root" />
-		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="${url}" />
+		<property name="username" value="${username}" />
+		<property name="password" value="${password}" />
+		<property name="driverClassName" value="${driverClassName}" />
 	</bean>
 	
 	<bean id="pagePlugin" class="com.lanyuan.core.lanyuan_core.plugin.PagePlugin">
